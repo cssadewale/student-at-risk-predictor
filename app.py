@@ -152,8 +152,7 @@ def plain_english_explanation(shap_vals, feature_names, raw_input):
         if top_protect:
             lines.append(f"**Protective factor:** {top_protect}")
 
-    return "  
-".join(lines)
+    return "\".join(lines)
 
 # ── UI LAYOUT ─────────────────────────────────────────────────
 st.title("🎓 Student At-Risk Predictor")
